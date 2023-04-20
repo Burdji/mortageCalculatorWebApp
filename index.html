@@ -16,43 +16,39 @@
             <br>
             <br>
             <div>
-                <span>Purchase price:</span>
-                <strong id="Purchase price value"></strong>
+                <span>Purchase price: </span><strong>$</strong><strong id="purchPriceValue"></strong>
                 &lt;&gt;
-                <span>Down payment:</span>
-                <output id="Down payment value"> <strong>0</strong></output>
+                <span>Down payment: </span><strong>$</strong><strong id="downPayValue"></strong>
                 &lt;&gt;
-                <span>Repayment time:</span>
-                <output id="Repayment time value"> <strong>0</strong></output>
+                <span>Repayment time: </span><strong id="repayTimeValue"></strong><strong> years</strong>
             </div>
-            <br>
+                <br>
             <div>
-            <input class="sliders" type="range" id="Purchase price" name="Purchase price"
-                min="0" max="2000000" value="1000000">
-            &lt;&gt;
-            <input class="sliders" type="range" id="Down payment" name="Down payment"
-                min="0" max="2000000" value="1000000">
-            &lt;&gt;
-            <input class="sliders" type="range" id="Repayment time" name="Repayment time"
+                <input class="sliders" type="range" id="purchPrice"
+                min="0" max="1000000" value="500000" step="1000">
+                &lt;&gt;
+                <input class="sliders" type="range" id="downPay"
+                min="0" max="1000000" value="500000" step="1000">
+                &lt;&gt;
+                <input class="sliders" type="range" id="repayTime"
                 min="1" max="30" value="15">
             </div>
             <br>
             <br>
             <br>
             <div>
-                <span>Interest rate:</span>
-                <output id="Interest rate value"> <strong>0</strong></output>
+                <span>Interest rate:    </span><strong id="intRateValue"></strong><strong>%</strong>
                 &lt;&gt;
                 <span>Loan amount</span>
                 &lt;&gt;
                 <span>Estimated pr. month</span>
                 <br>
             </div>
-            <br>
+              <br>
             <div>
-            <input class="sliders" type="range" id="Interest rate" name="Interest rate"
-            min="0" max="99.9" step="0.01">
-            &lt;&gt;
+               <input class="sliders" type="range" id="intRate"
+               min="0" max="10" step="0.01" value="5">
+               &lt;&gt;
             </div>
             <br>
             <br>
@@ -60,6 +56,6 @@
             <button class="button1" onclick="">Get a mortgage quote</button>
         </section>
     </div>
-    <script src="mortgCalc.js"></script>  
+    <script src="main.js"></script>  
 </body>
 </html>

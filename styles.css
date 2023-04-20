@@ -30,11 +30,11 @@ body{
 }
 .sliders{
     -webkit-appearance: none;
-    appearance: none;
+    appearance: none;  
     width: 29%;
     height: 10px;
     border-radius: 10px;
-    background:#ffffff;
+    background: linear-gradient(90deg, rgb(255, 255, 255) 50%,rgb(255, 255, 255) 50%);
     outline: none; /* Remove outline */
     opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
     -webkit-transition: .2s; /* 0.2 seconds transition on hover */
@@ -46,11 +46,11 @@ body{
 .sliders::-webkit-slider-thumb {
     -webkit-appearance: none; /* Override default look */
     appearance: none;
-    width: 25px; /* Set a specific slider handle width */
-    height: 25px; /* Slider handle height */
+    width: 34px; /* Set a specific slider handle width */
+    height: 34px; /* Slider handle height */
     background: #ffffff; /* Green background */
     border: 7px solid #ffbf00;
-    border-radius: 1.5px;
+    border-radius: 50%;
     cursor: pointer; /* Cursor on hover */
 }
 .sliders::-moz-range-thumb{
@@ -61,9 +61,10 @@ body{
     border-radius: 50%;
     cursor: pointer; /* Cursor on hover */
 }
-.sliders::-moz-range-progress{
+/* .sliders::-moz-range-progress{
     height: 10px;
     background: #ffbf00;
     border-radius: 25px;
-}
+} */
+
 
