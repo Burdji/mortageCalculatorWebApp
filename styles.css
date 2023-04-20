@@ -1,0 +1,69 @@
+body{
+    background-color: #ffe494;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.box{
+    background-color: #ffe494;
+    height: 600px;
+    width: 960px;
+    padding: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 125px;
+    margin-bottom: auto;
+    border: 30px solid white;
+    border-radius: 40px;
+
+}
+.button1{
+    background-color: rgb(255, 180, 40);
+    border: 0px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: azure;
+}
+.button1:hover{
+    background-color: rgb(236, 141, 0);
+    cursor: pointer;
+}
+.sliders{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 29%;
+    height: 10px;
+    border-radius: 10px;
+    background:#ffffff;
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+.sliders:hover{
+    opacity: 1;
+}
+.sliders::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #ffffff; /* Green background */
+    border: 7px solid #ffbf00;
+    border-radius: 1.5px;
+    cursor: pointer; /* Cursor on hover */
+}
+.sliders::-moz-range-thumb{
+    width: 20px; /* Set a specific slider handle width */
+    height: 20px; /* Slider handle height */
+    background: #ffffff; /* Green background */
+    border: 7px solid #ffbf00;
+    border-radius: 50%;
+    cursor: pointer; /* Cursor on hover */
+}
+.sliders::-moz-range-progress{
+    height: 10px;
+    background: #ffbf00;
+    border-radius: 25px;
+}
+
