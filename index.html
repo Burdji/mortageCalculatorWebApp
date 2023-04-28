@@ -4,32 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MyMortgageCalculator</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="box">
         <section>
             <div>
-               <h1>Mortage Calculator</h3>
+               <h1>Mortgage Calculator</h3>
             </div>
             <br>
             <br>
             <div>
-                <span>Purchase price: </span><strong>$</strong><strong id="purchPriceValue"></strong>
-                &lt;&gt;
-                <span>Down payment: </span><strong>$</strong><strong id="downPayValue"></strong>
-                &lt;&gt;
-                <span>Repayment time: </span><strong id="repayTimeValue"></strong><strong> years</strong>
+                <label class="purch"><span>Purchase price:&ensp;</span><strong>$</strong><strong id="purchPriceValue"></strong></label>
+                <label id="down"><span>Down payment:&ensp;</span><strong>$</strong><strong id="downPayValue"></strong></label>
+                <label id="rep"><span>Repayment time:&ensp;</span><strong id="repayTimeValue"></strong><strong> years</strong></label>
             </div>
                 <br>
             <div>
                 <input class="sliders" type="range" id="purchPrice"
                 min="0" max="1000000" value="500000" step="1000">
-                &lt;&gt;
                 <input class="sliders" type="range" id="downPay"
                 min="0" max="1000000" value="250000" step="1000">
-                &lt;&gt;
                 <input class="sliders" type="range" id="repayTime"
                 min="1" max="30" value="15">
             </div>
@@ -37,21 +33,17 @@
             <br>
             <br>
             <div>
-                <span>Interest rate: </span><strong id="intRateValue"></strong><strong>%</strong>
-                &lt;&gt;
-                <span>Loan amount</span>
-                &lt;&gt;
-                <span>Estimated pr. month</span>
+                <label class="purch"></label><span>Interest rate:&ensp;</span><strong id="intRateValue"></strong></label>
+                <label id="loanz"></label><span>Loan amount</span></label>
+                <label id="month"></label><span>Estimated pr. month</span></label>
                 <br>
             </div>
               <br>
             <div>
                <input class="sliders" type="range" id="intRate"
                min="0" max="10" step="0.01" value="5">
-               &lt;&gt;
-               <strong>$</strong><strong id="loan"></strong>
-               &lt;&gt;
-               <strong>$</strong><strong id="montlyPay"></strong>
+               <label id="loanResult"><strong>$</strong><strong id="loan"></strong></label>
+               <label id="monthResult"><strong>$</strong><strong id="montlyPay"></strong></label>
             </div>
             <br>
             <br>
